@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkQuiz"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="436dp"
+        android:layout_height="259dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/park" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="380dp"
+        android:layout_height="132dp"
+
+        android:layout_marginTop="152dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="@string/question"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img"
+        app:layout_constraintVertical_bias="0.067" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bookmark"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@android:color/white"
+        android:clickable="true"
+        android:tint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@android:drawable/ic_input_get"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/optionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img"
+        app:layout_constraintVertical_bias="0.962">
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+        <Button
+            android:gravity="center"
+
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+        <Button
+            android:gravity="center"
+
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+        <Button
+            android:gravity="center"
+
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/question_count"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="@string/count"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/optionContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/next"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="80dp"
+        android:text="next"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/bookmark" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

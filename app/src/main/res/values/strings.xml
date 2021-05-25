@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GK QUIZ</string>
+    <string name="start">Start</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="quiz">quiz</string>
+    <string name="question">question</string>
+    <string name="national_park">National Park</string>
+    <string name="todo">TODO</string>
+    <string name="count">5/15</string>
+</resources>
